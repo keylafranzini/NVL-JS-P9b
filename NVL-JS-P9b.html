@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript</title>
+        <script>
+
+            var diasSemana = "Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo";
+            var ciudades = "Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti";
+            
+            diasSemana=diasSemana.split(",");
+            ciudad=ciudades.split(".");
+
+            var longitud = diasSemana.length;
+            var lugares = [];
+
+            for (var i = 0; i<=longitud; i++){
+                lugares.push([diasSemana[i],ciudad[i]]);
+            }
+
+            document.write(lugares);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+
+</html>
